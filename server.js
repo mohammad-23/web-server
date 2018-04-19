@@ -22,11 +22,11 @@ app.use((req, res, next) => {
     });
     next();
 });
-app.use((req, res, next) => {
-    res.render('maintenance.hbs', {
-               pageTitle: 'The site is currently under MAINTENANCE!!!'
-               })
-})
+//app.use((req, res, next) => {
+//    res.render('maintenance.hbs', {
+//               pageTitle: 'The site is currently under MAINTENANCE!!!'
+//               })
+//})
 
 
 hbs.registerHelper('getCurrentYear', () => {
